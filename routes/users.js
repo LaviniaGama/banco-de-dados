@@ -118,7 +118,7 @@ router.get('/dashboard/melhor-volta', (req, res) => {
     });
 });
 
-//TEMPOT TOTAL POR CORREDOR
+//TEMPO TOTAL POR CORREDOR
 router.get('/dashboard/tempo-total', (req, res) => {
     db.query(`
         SELECT corredor_id, SUM(tempo) AS tempo_total
